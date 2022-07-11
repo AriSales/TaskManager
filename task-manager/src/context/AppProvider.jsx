@@ -3,11 +3,11 @@ import AppContext from './AppContext';
 import PropTypes from 'prop-types';
 
 const AppProvider = ({ children }) => {
-  const [theme, setTheme] = useState('dark');
+  const [darkTheme, setDarkTheme] = useState(true);
 
   const contextValue = {
-    theme,
-    setTheme,
+    darkTheme,
+    setDarkTheme,
   };
 
   return (

@@ -1,13 +1,16 @@
 import React, { useContext } from 'react'
 import AppContext from './context/AppContext'
-import './App.css'
 import Header from './components/Header';
+import './CSS/Style.css'
+
 
 function App() {
-  const { theme } = useContext(AppContext);
+  const { darkTheme } = useContext(AppContext);
+  const theme = darkTheme ? 'light' : 'dark';
+  const classes = `theme ${theme}`;
 
   return (
-      <div className="App">
+      <div className={ classes }>
         <Header />
       </div>
   )

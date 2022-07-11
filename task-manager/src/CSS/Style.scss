@@ -1,0 +1,31 @@
+body {
+  all: unset;
+}
+
+.theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: 1500ms;
+}
+
+.dark {
+  background-color: #292841;
+  color: white;
+};
+
+button {
+  all: unset;
+  cursor: pointer;
+  transition: 500ms;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  img {
+    height: 10vh;
+  }
+
+}
