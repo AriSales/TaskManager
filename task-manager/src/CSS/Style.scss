@@ -2,30 +2,62 @@ body {
   all: unset;
 }
 
-.theme {
+.header {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  height: 100vh;
-  transition: 1500ms;
+  height: 7vh;
+  transition: 2000ms;
+  &.dark {
+    background-color: #1c1b29;
+    color: white;
+  };
 }
-
-.dark {
-  background-color: #292841;
-  color: white;
-};
 
 button {
   all: unset;
   cursor: pointer;
-  transition: 500ms;
-
-  &:hover {
-    opacity: 0.5;
-  }
-
   img {
-    height: 10vh;
+    height: 8vh;
+    &:hover {
+      opacity: 0.5;
+    }
   }
+}
 
+input {
+  all: unset;
+  width: 58vh;
+  font-size: 6vh;
+  text-align: center;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2000ms;
+  div {
+    display: flex;
+    gap: 1em;
+    align-items: baseline;
+  }
+  p {
+    font-size: 6vh;
+    margin: 0;
+    &.currentTime {
+      font-size: 3vh;
+      opacity: 0.7;
+    }
+  }
+  img {
+    height: 3vh;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &.dark {
+    background-color: #292841;
+    color: white;
+  };
 }

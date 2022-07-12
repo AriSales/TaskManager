@@ -2,27 +2,62 @@ body {
   all: unset;
 }
 
-.theme {
+.header {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  height: 100vh;
-  transition: 1500ms;
+  height: 7vh;
+  transition: 2000ms;
 }
-
-.dark {
-  background-color: #292841;
+.header.dark {
+  background-color: #1c1b29;
   color: white;
 }
 
 button {
   all: unset;
   cursor: pointer;
-  transition: 500ms;
-}
-button:hover {
-  opacity: 0.5;
 }
 button img {
-  height: 10vh;
+  height: 8vh;
+}
+button img:hover {
+  opacity: 0.5;
+}
+
+input {
+  all: unset;
+  width: 58vh;
+  font-size: 6vh;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2000ms;
+}
+.main div {
+  display: flex;
+  gap: 1em;
+  align-items: baseline;
+}
+.main p {
+  font-size: 6vh;
+  margin: 0;
+}
+.main p.currentTime {
+  font-size: 3vh;
+  opacity: 0.7;
+}
+.main img {
+  height: 3vh;
+}
+.main img:hover {
+  opacity: 0.5;
+}
+.main.dark {
+  background-color: #292841;
+  color: white;
 }/*# sourceMappingURL=Style.css.map */

@@ -6,12 +6,14 @@ import '../CSS/Style.scss';
 
 export default function Header() {
   const { darkTheme, setDarkTheme } = useContext(AppContext);
+  const theme = darkTheme ? 'dark' : 'light';
+  const classes = `header ${theme}`;
 
   return (
-    <div>
+    <div className={ classes }>
       <button type='button' onClick={() => (setDarkTheme(!darkTheme))} >
         {
-          darkTheme
+          !darkTheme
           ? <img
               src={ Moon }
               alt='Change to dark'
@@ -19,7 +21,7 @@ export default function Header() {
           : <img
               src={ Sun }
               style={
-                {filter: "invert(98%) sepia(3%) saturate(633%) hue-rotate(241deg) brightness(120%) contrast(100%)"}
+                {filter: 'invert(77%) sepia(30%) saturate(7500%) hue-rotate(335deg) brightness(104%) contrast(98%)'}
               }
               alt='Change to white'
             />
